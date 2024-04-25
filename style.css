@@ -1,9 +1,7 @@
 @font-face {
     font-family: "Rounded";
     src: url(fonts/rounded_sans_serif_7.ttf);
-}
 
-@font-face {
     font-family: "Philosopher";
     src: url(fonts/Philosopher-Regular.ttf);
 }
@@ -13,6 +11,8 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+
+
 }
 
 html {
@@ -102,8 +102,8 @@ header .container-grid {
 }
 
 .conteudo-banner img {
-    height: 152px;
-    width: 150px;
+    height: 155px;
+    width: 110px;
 }
 
 #sobre {
@@ -210,12 +210,55 @@ h2 {
 }
 
 #portifolio .container-grid {
-    margin: 0px;
+    max-width: 100%;
     width: 100%;
-    height: 800px;
+    height: 700px;
+    padding: 0%;
 
     background-image: url(img/fundo.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100vw 100%;
 
+    background-color: #001234;
+    text-align: center;
+
+
+}
+
+#portifolio img {
+    margin: auto;
+    width: 544px;
+    height: 486px;
+
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+#portifolio a {
+
+    color: white;
+
+    height: 100px;
+
+    font-family: "Rounded";
+    font-size: 28px;
+    text-decoration: none;
+}
+
+#portifolio {
+    height: 600px; 
+   margin-bottom: 100px;
+    
+}
+
+#portifolio p {
+    margin-bottom: 50px;
+
+    margin: auto;
+    height: 100px;
+
+    line-height: 1.5;
 }
