@@ -11,8 +11,11 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+}
 
-
+h2 {
+    font-family: "Rounded";
+    font-size: 28px;
 }
 
 html {
@@ -116,12 +119,12 @@ header .container-grid {
 
     text-align: center;
 }
-
+/*
 h2 {
     font-family: "Rounded";
     font-size: 28px;
 
-}
+}*/
 
 #sobre p {
     font-size: 18px;
@@ -249,16 +252,172 @@ h2 {
 }
 
 #portifolio {
-    height: 600px; 
-   margin-bottom: 100px;
-    
+    height: 600px;
+    margin-bottom: 100px;
+
 }
 
-#portifolio p {
+#portifolio h2 {
     margin-bottom: 50px;
+    padding-top: 25px;
 
     margin: auto;
     height: 100px;
 
     line-height: 1.5;
 }
+
+#contato {
+    text-align: center;
+
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+
+    background-color: #616E87;
+
+}
+
+
+#contato h2 {
+    margin-bottom: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#contato form {
+    width: 650px;
+    height: 550px;
+
+    margin: auto;
+    padding: 40px 0;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+    background-color: #BAC7E2;
+
+
+    border: 3px solid #0442BF;
+
+    color: black;
+    font-family: "Philosopher";
+    font-size: 18px;
+
+}
+
+.campo {
+    width: 80%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+}
+
+.campo-descricao {
+    width: 80%;
+    height: 30%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 10px;
+}
+
+.campo input {
+    height: 40px;
+
+
+    color: #001234;
+    background-color: white;
+
+    border: 3px solid #0442BF;
+    border-radius: 4px;
+   
+    text-indent: 10px;
+
+    outline: none;
+}
+
+.campo-descricao textarea {
+    height: 130px;
+    color: #0F1F3C;
+    background-color: white;
+
+    border: 3px solid #0442BF;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+    margin-bottom: 10px;
+
+    resize: none;
+}
+
+.campo label,
+.campo-descricao label {
+    margin-bottom: 10px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "Philosopher";
+    font-size: 18px;
+    
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid #F25922;
+    border: none;
+}
+
+#contato form button {
+    height: 50px;
+    width: 60%;
+
+    background-color: #F25922;
+    color: white;
+
+    border: 3px solid #C84A1C;
+    border-radius: 4px;
+
+    font-size: 18px;
+    font-family: "Rounded";
+    font-weight: 700;
+    /*Bold */
+
+    margin-top: 10px;
+    padding-top: 5px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+    margin-top: 40px;
+    margin: auto;
+ 
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: #C84A1C;
+}
+
