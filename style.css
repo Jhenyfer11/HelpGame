@@ -1,5 +1,5 @@
 @font-face {
-    font-family: "Rounded";
+    font-family: "Rounded sans serif 7";
     src: url(fonts/rounded_sans_serif_7.ttf);
 
     font-family: "Philosopher";
@@ -14,7 +14,7 @@
 }
 
 h2 {
-    font-family: "Rounded";
+    font-family: "Rounded sans serif 7";
     font-size: 28px;
 }
 
@@ -65,7 +65,7 @@ header .container-grid {
 
 .menu a {
     font-size: 19px;
-    font-family: "Rounded";
+    font-family: "Rounded sans serif 7";
 
     color: white;
 
@@ -95,7 +95,7 @@ header .container-grid {
 
     color: white;
 
-    font-family: "Rounded";
+    font-family: "Rounded sans serif 7";
     font-size: 28px;
 
     text-align: left;
@@ -119,6 +119,7 @@ header .container-grid {
 
     text-align: center;
 }
+
 /*
 h2 {
     font-family: "Rounded";
@@ -153,7 +154,7 @@ h2 {
 }
 
 .card {
-    height: 400px;
+    height: 350px;
     width: 250px;
 
     display: flex;
@@ -172,12 +173,15 @@ h2 {
 }
 
 .card img {
-    height: 55%;
-    width: 100%;
+    height: 75%;
+    width: 90%;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
 
 }
 
-.card p {
+/*.card p {
     color: white;
 
     font-family: "Philosopher";
@@ -186,22 +190,21 @@ h2 {
     text-align: left;
 
     padding: 7%;
-}
+}*/
 
 .card button {
     width: 90%;
-    height: 40px;
+    height: 70px;
 
-    background-color: #F25922;
+    background-color: #C84A1C;
 
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
 
     color: white;
 
-    font-family: "Philosopher";
+    font-family: "Rounded sans serif 7";
     font-size: 18px;
-    font-weight: 600;
 
     cursor: pointer;
 
@@ -240,16 +243,6 @@ h2 {
     align-items: center
 }
 
-#portifolio a {
-
-    color: white;
-
-    height: 100px;
-
-    font-family: "Rounded";
-    font-size: 28px;
-    text-decoration: none;
-}
 
 #portifolio {
     height: 600px;
@@ -258,22 +251,83 @@ h2 {
 }
 
 #portifolio h2 {
-    margin-bottom: 50px;
-    padding-top: 25px;
-
-    margin: auto;
     height: 100px;
 
+    font-family: "Rounded sans serif 7";
+    font-size: 28px;
+
+    text-decoration: none;
     line-height: 1.5;
+    color: white;
+
+    margin-bottom: 50px;
+    padding-top: 25px;
+    margin: auto;
+
 }
+
+#depoimentos .titulo {
+    text-align: left;
+    font-family: "Rounded sans serif 7";
+    font-size: 28px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+
+#depoimentos .card-depoimentos {
+    width: 600px;
+    
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+    margin-bottom: 70px;
+    
+ 
+}
+
+.card-depoimentos p {
+    font-family: "Philosopher";
+    font-size: 16px;
+   
+    padding: 20px;
+
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.card-depoimentos img {
+    margin-right: 20px;
+    height: 50px;
+}
+
 
 #contato {
     text-align: center;
 
-    padding-bottom: 100px;
-    margin-bottom: 100px;
+    padding-bottom: 50px;
+    padding-top: 0;
 
     background-color: #616E87;
+
+}
+
+#divisoria {
+    height: 200px;
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: #001234;
+    background-image: url(img/divisoria.png);
+
+    background-size: 100vw 100%;
 
 }
 
@@ -301,7 +355,7 @@ h2 {
     background-color: #BAC7E2;
 
 
-    border: 3px solid #0442BF;
+    border: 1px solid #0F1F3C;
 
     color: black;
     font-family: "Philosopher";
@@ -342,9 +396,9 @@ h2 {
     color: #001234;
     background-color: white;
 
-    border: 3px solid #0442BF;
+    border: 1px solid #0F1F3C;
     border-radius: 4px;
-   
+
     text-indent: 10px;
 
     outline: none;
@@ -355,7 +409,7 @@ h2 {
     color: #0F1F3C;
     background-color: white;
 
-    border: 3px solid #0442BF;
+    border: 1px solid #0F1F3C;
     border-radius: 4px;
 
     outline: none;
@@ -375,7 +429,7 @@ h2 {
 .campo-descricao textarea {
     font-family: "Philosopher";
     font-size: 18px;
-    
+
 }
 
 .campo input::placeholder,
@@ -396,13 +450,12 @@ h2 {
     background-color: #F25922;
     color: white;
 
-    border: 3px solid #C84A1C;
+    border: 1px solid #C84A1C;
     border-radius: 4px;
 
     font-size: 18px;
-    font-family: "Rounded";
+    font-family: "Rounded sans serif 7";
     font-weight: 700;
-    /*Bold */
 
     margin-top: 10px;
     padding-top: 5px;
@@ -412,7 +465,7 @@ h2 {
     cursor: pointer;
     margin-top: 40px;
     margin: auto;
- 
+
 
     transition: background-color 500ms;
 }
@@ -421,3 +474,229 @@ h2 {
     background-color: #C84A1C;
 }
 
+@media screen and (max-width: 1300px) {
+    header {
+        position: relative;
+    }
+
+    header button {
+        width: 50px;
+
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    header svg {
+        fill: white;
+    }
+
+
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+
+
+        flex-direction: column;
+        justify-content: space-around;
+
+        background-color: #000000da;
+
+        position: absolute;
+        top: 165px;
+        right: 0px;
+
+    }
+
+    #sobre {
+        padding: 100px 15%;
+    }
+
+    .card {
+        height: 320px;
+        width: 200px;
+    }
+
+    #contato form {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .container-cards {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        height: 400px;
+
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 40%;
+    }
+
+    footer {
+        height: unset;
+    }
+
+    footer .container-grid {
+        padding: 80px;
+        flex-direction: column;
+    }
+
+    footer img {
+        margin-bottom: 100px;
+    }
+
+    footer p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .redes-sociais {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        flex-basis: 45%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #sobre {
+        height: unset;
+        margin-bottom: 40px;
+    }
+
+    #sobre h2 {
+        margin-bottom: 50px;
+    }
+
+    #sobre p {
+        margin-bottom: 30px;
+    }
+
+    #cases,
+    #contato {
+        margin-bottom: unset;
+    }
+
+    #portifolio a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .campo,
+    .campo-descricao,
+    #contato form button {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .container-grid {
+        width: 90%;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    .banner {
+        background-size: cover;
+    }
+
+    .conteudo-banner p {
+        font-size: 24px;
+    }
+
+    nav.menu {
+        width: 100%;
+
+        display: none;
+    }
+
+    #sobre {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    #sobre p {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    #cases.container-grid {
+        width: 100%;
+        margin: unset;
+    }
+
+    .container-cards {
+        flex-wrap: nowrap;
+
+        gap: 40px;
+
+        overflow-x: auto;
+    }
+
+    .card {
+        height: 400px;
+        width: 280px;
+
+        flex-basis: unset;
+    }
+
+    .card:first-child {
+        margin-left: 30px;
+    }
+
+    .card:last-child {
+        margin-right: 30px;
+    }
+
+    #portifolio {
+        margin-bottom: 0px;
+    }
+
+    #contato {
+        padding-top: 150px;
+
+        color: white;
+    }
+
+    #contato h2 {
+        margin-bottom: 0;
+    }
+
+    #contato form {
+        width: 100%;
+        border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header img {
+        width: 160px;
+    }
+
+    header svg {
+        width: 40px;
+    }
+
+    .conteudo-banner p {
+        font-size: 20px;
+    }
+
+    footer img {
+        width: 200px;
+    }
+
+}
