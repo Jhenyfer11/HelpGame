@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --azul-background: #001234;
+    --laranja-helpgame: #F25922;
+}
+
 h2 {
     font-family: "Rounded sans serif 7";
     font-size: 28px;
@@ -76,7 +81,8 @@ header .container-grid {
 }
 
 .menu a:hover {
-    text-decoration-color: white;
+    text-decoration-color: var(--laranja-helpgame);
+    font-size: 20px;
 }
 
 .conteudo-banner {
@@ -120,12 +126,6 @@ header .container-grid {
     text-align: center;
 }
 
-/*
-h2 {
-    font-family: "Rounded";
-    font-size: 28px;
-
-}*/
 
 #sobre p {
     font-size: 18px;
@@ -181,16 +181,6 @@ h2 {
 
 }
 
-/*.card p {
-    color: white;
-
-    font-family: "Philosopher";
-    font-size: 18px;
-
-    text-align: left;
-
-    padding: 7%;
-}*/
 
 .card button {
     width: 90%;
@@ -234,13 +224,17 @@ h2 {
 #portifolio img {
     margin: auto;
     width: 544px;
-    height: 486px;
+
 
     margin-top: auto;
+    margin-bottom: 50px;
+
+    border-radius: 3px;
 
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -280,20 +274,20 @@ h2 {
 
 #depoimentos .card-depoimentos {
     width: 600px;
-    
+
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 
     margin-bottom: 70px;
-    
- 
+
+
 }
 
 .card-depoimentos p {
     font-family: "Philosopher";
     font-size: 16px;
-   
+
     padding: 20px;
 
     background-color: #D9D9D9;
@@ -454,8 +448,8 @@ h2 {
     border-radius: 4px;
 
     font-size: 18px;
-    font-family: "Rounded sans serif 7";
-    font-weight: 700;
+    font-family: "Philosopher";
+    font-weight: 800;
 
     margin-top: 10px;
     padding-top: 5px;
@@ -473,6 +467,77 @@ h2 {
 #contato form button:hover {
     background-color: #C84A1C;
 }
+
+footer {
+    height: 290px;
+
+    background-color: #001234;
+}
+
+footer .container-grid {
+    height: 100%;
+    padding-top: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.redes-sociais a {
+    height: 50%;
+    margin: auto;
+
+    margin-left: 8px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    color: white;
+    font-family: "Philosopher";
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+.numero {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.email {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.instagram {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.linkedin {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.redes-sociais svg {
+    height: 22px;
+    color: white;
+}
+
+
+.redes-sociais svg:hover {
+    color: var(--laranja-helpgame);
+}
+
+
+
+
 
 @media screen and (max-width: 1300px) {
     header {
@@ -526,6 +591,7 @@ h2 {
     }
 }
 
+
 @media screen and (max-width: 1080px) {
     .container-cards {
         flex-wrap: wrap;
@@ -564,33 +630,79 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #sobre {
+        padding-top: 20px;
+        height: unset;
+
+    }
+
+    .conteudo-banner p {
+        font-size: 24px;
+    }
+
+    .conteudo-banner img {
+        height: 145px;
+        width: 100px;
+
+    }
+
+
     .card {
         flex-basis: 45%;
     }
+
 }
 
+
 @media screen and (max-width: 700px) {
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .conteudo-banner p {
+
+        font-size: 20px;
+    }
+
+    .conteudo-banner img {
+        height: 135px;
+        width: 90px;
+
+    }
+
     #sobre {
+        padding-top: 10px;
         height: unset;
-        margin-bottom: 40px;
+
     }
 
     #sobre h2 {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     #sobre p {
         margin-bottom: 30px;
     }
 
-    #cases,
+    #solucoes,
     #contato {
         margin-bottom: unset;
     }
 
-    #portifolio a {
-        width: 100%;
-        text-align: center;
+
+    #portifolio {
+        height: unset;
+        font-size: 24px;
+    }
+
+    #portifolio img {
+        width: 75%;
     }
 
     .campo,
@@ -601,6 +713,16 @@ h2 {
 }
 
 @media screen and (max-width: 520px) {
+    .conteudo-banner p {
+        font-size: 20px;
+    }
+
+    .conteudo-banner img {
+        height: 125px;
+        width: 90px;
+
+    }
+
     .container-grid {
         width: 90%;
     }
@@ -613,9 +735,6 @@ h2 {
         background-size: cover;
     }
 
-    .conteudo-banner p {
-        font-size: 24px;
-    }
 
     nav.menu {
         width: 100%;
@@ -626,6 +745,11 @@ h2 {
     #sobre {
         padding-right: 0px;
         padding-left: 0px;
+
+        padding-top: 10px;
+        margin-bottom: 30px;
+
+
     }
 
     #sobre p {
@@ -634,7 +758,7 @@ h2 {
         margin-bottom: 20px;
     }
 
-    #cases.container-grid {
+    #solucoes.container-grid {
         width: 100%;
         margin: unset;
     }
@@ -666,20 +790,25 @@ h2 {
         margin-bottom: 0px;
     }
 
-    #contato {
-        padding-top: 150px;
 
-        color: white;
+    #contato {
+        background-color: #BAC7E2;
+        height: unset;
+        padding: 0;
+        padding-top: 0;
     }
 
     #contato h2 {
-        margin-bottom: 0;
+        color: black;
     }
 
     #contato form {
+        border: 0px;
         width: 100%;
         border-radius: 0;
     }
+
+
 }
 
 @media screen and (max-width: 400px) {
