@@ -593,16 +593,24 @@ footer .container-grid {
 
 
 @media screen and (max-width: 1080px) {
+    #sobre h2 {
+        margin-bottom: 20px;
+    }
     .container-cards {
         flex-wrap: wrap;
     }
 
     .card {
         height: 400px;
+    
 
         flex-shrink: 0;
         flex-grow: 0;
         flex-basis: 40%;
+    }
+
+    .card img {
+        margin: auto;
     }
 
     footer {
@@ -656,6 +664,42 @@ footer .container-grid {
         flex-basis: 45%;
     }
 
+    #solucoes h2{
+       padding-left: 10px;
+    }
+
+    #depoimentos p {
+        width: 75%
+    }
+
+    #depoimentos {
+      height: unset;
+    }
+
+    #depoimentos .titulo img{
+        width: 138px;
+        height: 25px;
+    }
+
+
+    #depoimentos .card-depoimentos {
+        margin-bottom: 50px;
+        width: unset;
+    }
+
+    .card-depoimentos p {
+        padding: 10px;
+    }
+
+    .card-depoimentos img {
+        margin-right: 10px;
+    }
+
+    #divisoria {
+        height: 150px;
+        background-image: none;
+    }
+
 }
 
 
@@ -683,7 +727,7 @@ footer .container-grid {
     }
 
     #sobre h2 {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     #sobre p {
@@ -694,7 +738,6 @@ footer .container-grid {
     #contato {
         margin-bottom: unset;
     }
-
 
     #portifolio {
         height: unset;
@@ -712,9 +755,9 @@ footer .container-grid {
     }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 560px) {
     .conteudo-banner p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .conteudo-banner img {
@@ -808,6 +851,10 @@ footer .container-grid {
         border-radius: 0;
     }
 
+    #contato form button {
+        width: 55%;
+        height: 40px;
+    }
 
 }
 
@@ -821,7 +868,7 @@ footer .container-grid {
     }
 
     .conteudo-banner p {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     footer img {
