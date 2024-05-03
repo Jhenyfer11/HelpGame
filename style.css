@@ -1,4 +1,4 @@
-@font-face {    
+@font-face {
     font-family: "Philosopher";
     src: url(fonts/Philosopher-Regular.ttf);
 }
@@ -581,6 +581,7 @@ footer .container-grid {
 
     #sobre {
         padding: 100px 15%;
+
     }
 
     .card {
@@ -595,13 +596,25 @@ footer .container-grid {
 
 
 @media screen and (max-width: 1080px) {
+
+    
+    #sobre {
+        padding: 80px 15%;
+
+    }
+
     #sobre h2 {
         margin-bottom: 20px;
+    }
+
+    #sobre p {
+        margin-bottom: 15px;
     }
 
     .container-cards {
         flex-wrap: wrap;
     }
+
 
     .card {
         height: 400px;
@@ -640,17 +653,13 @@ footer .container-grid {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 860px) {
 
     h2 {
         font-size: 24px;
     }
 
-    #sobre {
-        padding-top: 20px;
-        height: unset;
 
-    }
 
     .conteudo-banner p {
         font-size: 24px;
@@ -662,6 +671,18 @@ footer .container-grid {
 
     }
 
+    #sobre {
+        margin-top: 30px;
+
+        padding-top: 20px;
+        height: unset;
+
+        padding-bottom: unset;
+    }
+
+    #sobre p {
+        margin-bottom: 10px;
+    }
 
     .card {
         flex-basis: 45%;
@@ -669,6 +690,9 @@ footer .container-grid {
 
     #solucoes h2 {
         padding-left: 10px;
+
+        margin-top: 30px;
+        margin-bottom: 50px;
     }
 
     #depoimentos p {
@@ -714,12 +738,15 @@ footer .container-grid {
 
     .conteudo-banner p {
 
+        padding-bottom: 30px;
+        height: unset;
         font-size: 20px;
     }
 
     .conteudo-banner img {
-        height: 135px;
-        width: 90px;
+        height: 125px;
+        width: 80px;
+        margin-bottom: 30px;
 
     }
 
@@ -733,9 +760,7 @@ footer .container-grid {
         margin-bottom: 20px;
     }
 
-    #sobre p {
-        margin-bottom: 30px;
-    }
+
 
     #solucoes,
     #contato {
@@ -759,7 +784,7 @@ footer .container-grid {
 }
 
 @media screen and (max-width: 560px) {
-    h2{
+    h2 {
         font-size: 22px;
     }
 
@@ -857,6 +882,7 @@ footer .container-grid {
 
     #contato h2 {
         color: black;
+        margin-bottom: unset
     }
 
     #contato form {
@@ -884,7 +910,10 @@ footer .container-grid {
     .conteudo-banner p {
         font-size: 16px;
     }
-
+    #depoimentos .titulo img {
+        width: 100px;
+        height: 18px;
+    }
 
 
 }
