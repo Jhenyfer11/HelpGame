@@ -759,6 +759,10 @@ footer .container-grid {
 }
 
 @media screen and (max-width: 560px) {
+    h2{
+        font-size: 22px;
+    }
+
     .conteudo-banner p {
         font-size: 18px;
     }
