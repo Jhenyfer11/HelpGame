@@ -128,6 +128,10 @@ header .container-grid {
     text-align: center;
 }
 
+#sobre h2{
+    margin-bottom: 30px;
+}
+
 
 #sobre p {
     font-size: 18px;
@@ -604,7 +608,7 @@ footer .container-grid {
     }
 
     #sobre h2 {
-        margin-bottom: 20px;
+        margin-top: 40px;
     }
 
     #sobre p {
@@ -670,6 +674,7 @@ footer .container-grid {
         width: 100px;
 
     }
+
 
     #sobre {
         margin-top: 30px;
@@ -756,9 +761,7 @@ footer .container-grid {
 
     }
 
-    #sobre h2 {
-        margin-bottom: 20px;
-    }
+    
 
 
 
@@ -770,6 +773,7 @@ footer .container-grid {
     #portifolio {
         height: unset;
         font-size: 24px;
+        margin-bottom: unset;
     }
 
     #portifolio img {
@@ -868,9 +872,8 @@ footer .container-grid {
 
 
     #portifolio .container-grid {
-        height: 500px;
-
-
+        padding-bottom: 60px;
+        height: unset;
     }
 
 
@@ -911,9 +914,15 @@ footer .container-grid {
     .conteudo-banner p {
         font-size: 16px;
     }
+
     #depoimentos .titulo img {
         width: 100px;
         height: 18px;
     }
 
+    #depoimentos .container-grid {
+        padding-top: unset;
+        height: unset;
+      
+    }
 }
